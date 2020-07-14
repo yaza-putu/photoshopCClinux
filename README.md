@@ -22,14 +22,12 @@ and sets some necessary component up for best performance
 * works on any Linux distributions
 
 ## :warning: Requirements
-1- use 64bit edition of your distro
-2. make sure wine installed wine,if you get something error on wine fix before install photosop cc
+1- use 64bit edition of your distro <br>
+2. make sure wine installed wine,if you get something error on wine fix before install photosop cc <br>
 3. make sure below packages are already installed on your Linux distro
 * `wine`
 * `winetricks`
 * `aria2`
-* `md5sum`
-
 
 if they are not already installed you can install them using your package manager for example in arch Linux
 ```bash
@@ -45,7 +43,7 @@ sudo nano apt-get install aria2 winetricks
 4- make sure you have internet connection and about 1.5 Gib traffic for downloading photoshop and its components at first time
 
 ## :computer: Installation
-then you can easily run `setup.sh` script to install photoshop cc on your linux distro
+you can easily run `setup.sh` script to install photoshop cc on your linux distro
 
 ```bash
 chmod +x setup.sh
