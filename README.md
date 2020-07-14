@@ -23,12 +23,7 @@ and sets some necessary component up for best performance
 
 ## :warning: Requirements
 1- use 64bit edition of your distro
-2. make sure wine installed,
-```bash
-wine
-```
-if you get something error on wine fix before install photosop cc
-
+2. make sure wine installed wine,if you get something error on wine fix before install photosop cc
 3. make sure below packages are already installed on your Linux distro
 * `wine`
 * `winetricks`
