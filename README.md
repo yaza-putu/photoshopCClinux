@@ -23,7 +23,7 @@ and sets some necessary component up for best performance
 
 ## :warning: Requirements
 1- use 64bit edition of your distro <br>
-2. make sure wine installed wine,if you get something error on wine fix before install photosop cc <br>
+2. make sure installed wine,if you get something error on wine fix before install photosop cc but this important for successfully install photoshop <br>
 3. make sure below packages are already installed on your Linux distro
 * `wine`
 * `winetricks`
