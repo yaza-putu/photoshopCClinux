@@ -23,11 +23,16 @@ and sets some necessary component up for best performance
 
 ## :warning: Requirements
 1- use 64bit edition of your distro
+2. make sure wine installed,
+```bash
+wine
+```
+if you get something error on wine fix before install photosop cc
 
-2-make sure below packages are already installed on your Linux distro
+3. make sure below packages are already installed on your Linux distro
 * `wine`
 * `winetricks`
-* `aria2c`
+* `aria2`
 * `md5sum`
 
 
@@ -35,46 +40,22 @@ if they are not already installed you can install them using your package manage
 ```bash
 sudo pacman -S wine aria2 winetricks
 ``` 
+or
+```bash
+sudo nano apt-get install aria2 winetricks
+```
 3- make sure you have enogh storage in your `/home` partition about `5 GiB`
 > 1 GiB will be free after installation
 
 4- make sure you have internet connection and about 1.5 Gib traffic for downloading photoshop and its components at first time
 
 ## :computer: Installation
-
-there are two installation scripts
-
-* `PhotoshopSetup.sh`
-* `PhotoshopSetupCustom.sh` (Recommended)
-
-installer scripts use a virtual drive of wine and makes a new `winprefix` for photoshop
-
-first of all you need to clone the repository with this command:
-```bash
-git clone https://github.com/Gictorbit/photoshopCClinux.git
-cd photoshopCClinux
-```
 then you can easily run `setup.sh` script to install photoshop cc on your linux distro
 
 ```bash
 chmod +x setup.sh
 ./setup.sh
 ```
-
-you can use `-d` switch to specify installation path, and `-c` for the cache directory.
-for example:
-```bash
-./PhotoshopSetupCustom.sh -d /mnt/myfiles/photoshop
-```
-or
-```bash
-./PhotoshopSetup.sh -d /mnt/myfiles/photoshop -c /mnt/cache
-```
-if you don't use it, installer script uses the default path
-also, uninstaller script and others will detect your custom path so there is no problem
-I recommend just use `-d` argument and use default cache directory
-this feature is under test after testing I'll add it to `setup.sh`
-
 
 <div align="center" class="tip" markdown="1" style>
 
@@ -85,29 +66,6 @@ during installation please pay attention to script messages
 
 > **NOTE :** make sure OS version in wine is on windows 7
 
-
-<details>
-<summary>more details</summary>
-
-for components installation you have two options, using winetricks or using custom way.
-
-### :one: component installation using winetricks (Recommended)
-for installing photoshop just run the bash script with below command it downloads and installs photoshop include its component using winetricks and configures wine automatically
-
-```bash
-chmod +x PhotoshopSetup.sh
-./PhotoshopSetup.sh
-```
-
-### :two: component installation using custom script
-for installing photoshop just run the bash script with below command it downloads and installs photoshop include its component and configures wine automatically
-
-```bash
-chmod +x PhotoshopSetupCustom.sh
-./PhotoshopSetupCustom.sh
-```
-
-</details>
 
 
 ## :wine_glass: wineprefix Configuration
