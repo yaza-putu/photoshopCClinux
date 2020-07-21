@@ -35,6 +35,8 @@ sudo pacman -S wine aria2 winetricks
 ``` 
 or
 ```bash
+
+sudo nano apt-get install wine
 sudo nano apt-get install aria2 winetricks
 ```
 3- make sure you have enogh storage in your `/home` partition about `5 GiB`
