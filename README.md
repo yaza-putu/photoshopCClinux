@@ -51,7 +51,7 @@ you can easily run `setup.sh` script to install photoshop cc on your linux distr
 chmod +x setup.sh
 ./setup.sh
 ```
-recommendations  number 1 use with winetricks
+recommendation  number 1 use with winetricks
 <div align="center" class="tip" markdown="1" style>
 
 ![setup-screenshot](images/setup-screenshot.png)
